@@ -1,156 +1,213 @@
 @import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap");
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:  "Bitter", serif;
+    font-family: "Bitter", serif;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
 }
 
-section{
+h2 {
+    font-size: 40px;
+}
+
+section {
     height: 100vh;
 }
 
 /* header */
-header{
+header {
     background-color: black;
-    padding: 10px;
+    padding: 20px;
 }
 
-.nav-list{
+.nav-list {
     display: flex;
     justify-content: flex-end;
-    gap: 30px;
+    gap: 40px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* home */
-#home{
-    background:linear-gradient(135deg,#b850b8,#37418dba );
+#home {
+    background: linear-gradient(135deg, #b850b8, #37418dba);
 }
 
-.home{
+.home {
     text-align: center;
-    color:#fff ;
+    color: #fff;
     padding: 11% 30px 0 30px;
 }
 
-button{
+button {
     padding: 10px 40px;
     border-radius: 25px;
     border: none;
-    background-color:#32457e;
+    background-color: #32457e;
     margin: 10px;
 }
 
-.home h1{
+.home h1 {
     font-size: 55px;
 }
 
-.home p{
+.home p {
     letter-spacing: 1px;
-    margin:10px;
+    margin: 10px;
 }
 
 /* about */
-#about{
-    background: linear-gradient(to right,#ea82de,purple);  
+#about {
+    background: linear-gradient(to right, #ea82de, purple);
 }
 
-.img img{
+.img img {
     height: 250px;
     width: 350px;
 }
 
-.about-us{
+.about-us {
     display: flex;
-    color:#fff ;
+    color: #fff;
     padding: 11% 30px 0 30px;
-    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    margin-inline: auto;
 }
 
 /* service */
-#service{
-    background: linear-gradient(to right,#919054,#295029);
+#service {
+    background: linear-gradient(to right, #919054, #295029);
 }
 
-.service{
-    color:#fff ;
+.service {
+    color: #fff;
     padding: 20% 30px 0 30px;
 }
 
-.boxs{
-    display:flex ;
-    gap: 13%;
+.boxs {
+    display: flex;
+    gap: 100px;
     margin-top: 25px;
+    align-items: center;
 }
-.box{
-    padding: 15px 15px 10px 15px;
+
+.box {
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 20px #0000001a;
+    transition: transform 0.3s;
 }
+
+.box:hover {
+    transform: translateY(-10px);
+}
+
 /* project */
-#project{
-    background: linear-gradient(to right,#5fc05f,#5f9eb3);
+#project {
+    background: linear-gradient(to right, #5fc05f, #5f9eb3);
 }
 
-.our-project{
-    color:#fff ;
-    padding: 20% 30px 0 30px;
+.our-project {
+    color: #fff;
+    padding: 100px;
 }
 
-.project p{
+.project p {
     font-size: 40px;
     font-weight: 500;
 }
 
-.project{
-    padding: 40px 0  40px 35px;
-    width: 25%;
+.project {
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
-.project-1{
+.project-1 {
     background-color: #4cd04c;
 }
 
-.project-2{
+.project-2 {
     background-color: skyblue;
 }
 
-.project-3{
+.project-3 {
     background-color: black;
 }
 
-.project-4{
-    background-color:blue;
+.project-4 {
+    background-color: blue;
 }
 
-.project-5{
+.project-5 {
     background-color: pink;
 }
 
-.project-6{
+.project-6 {
     background-color: crimson;
 }
 
-.projects{
+.projects {
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
     margin: 0 auto;
-   max-width:1200px;
- 
+    max-width: 1200px;
+
 }
 
 /* form */
 
-#form{
-   background: linear-gradient(to right,yellow,pink);
+#form {
+    background: linear-gradient(to right, #dbdb48, pink);
 }
 
-.form{
+.form {
     color: white;
-    text-align: center;
+    padding: 100px;
+}
+
+
+input {
+    width: 40%;
+    height: 30px;
+    padding: 5px;
+    margin-bottom: 1rem;
+}
+
+label {
+    font-size: 25px;
+}
+
+textarea {
+    width: 40%;
+    height: 100px;
+}
+
+.form-intro {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    background-color: #d9c6c685;
+}
+
+button{
+    background-color: royalblue;
+    width: 40%;
+    border-radius: 5px;
+    margin: 1rem;
 }
